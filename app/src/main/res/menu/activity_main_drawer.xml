@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:id="@+id/main_menu"
+        android:checkableBehavior="single"
+        android:visible="true">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_Bathroom"
+            android:icon="@mipmap/bathroom"
+            android:title="Bathroom" />
+        <item
+            android:id="@+id/nav_Hardware"
+            android:icon="@mipmap/hardware"
+            android:title="Hardware" />
+        <item
+            android:id="@+id/nav_Kitchens_and_Wardrobes"
+            android:icon="@mipmap/kitchen"
+            android:title="Kitchens and Wardrobes" />
+        <item
+            android:id="@+id/nav_Home_Improvement"
+            android:icon="@mipmap/homeimproveme"
+            android:title="Home Improvement" />
+        <item
+            android:id="@+id/nav_todays_deal"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Today's Deals" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_Kitchen_Accessories"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Kitchen Accessories" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_Home_Accessories"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Home Accessories" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_tFurniture_Fittings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Furniture Fittings " />
+
+    </group>
+
+    <item
+        android:checkableBehavior="single"
+        android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+    <item android:title="About Krios ">
+        <menu>
+            <item
+                android:id="@+id/nav_About"
+                android:icon="@drawable/ic_menu_share"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Support" />
+        </menu>
+    </item>
+    <item
+
+        android:title="My Account">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Login" />
+            <item
+                android:id="@+id/nav_Account_Dashboard"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Account Dashboard" />
+            <item
+                android:id="@+id/nav_Account_Information"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Account Information" />
+            <item
+                android:id="@+id/nav_Address_Book"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Address Book" />
+            <item
+                android:id="@+id/nav_My_Orders"
+                android:icon="@drawable/ic_menu_share"
+                android:title="My Orders" />
+            <item
+                android:id="@+id/nav_Billing_Agreements"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Billing Agreements" />
+            <item
+                android:id="@+id/nav_Recurring_Profiles"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Recurring Profiles" />
+            <item
+                android:id="@+id/nav_My_Product_Reviews"
+                android:icon="@drawable/ic_menu_share"
+                android:title="My Product Reviews" />
+            <item
+                android:id="@+id/nav_My_Tags"
+                android:icon="@drawable/ic_menu_share"
+                android:title="My Tags" />
+            <item
+                android:id="@+id/nav_Your_Wish_List"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Your Wish List" />
+            <item
+                android:id="@+id/nav_My_Applications"
+                android:icon="@drawable/ic_menu_share"
+                android:title="My Applications" />
+            <item
+                android:id="@+id/nav_Newsletter_Subscriptions"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Newsletter Subscriptions" />
+            <item
+                android:id="@+id/nav_My_Downloadable_Products"
+                android:icon="@drawable/ic_menu_share"
+                android:title="My Downloadable Products" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Logout" />
+
+
+        </menu>
+    </item>
+
+</menu>

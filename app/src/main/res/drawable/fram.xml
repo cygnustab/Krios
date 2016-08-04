@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selected"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/banner2_4"
+        android:duration="4000" />
+    <item
+        android:drawable="@drawable/banner3_4"
+        android:duration="4000" />
+    <item
+        android:drawable="@drawable/banner4_4"
+        android:duration="4000" />
+    <item
+        android:drawable="@drawable/banner5_4"
+        android:duration="4000" />
+    <item
+        android:drawable="@drawable/banner6_7"
+        android:duration="4000" />
+    <item
+        android:drawable="@drawable/free_shipping"
+        android:duration="4000" />
+
+</animation-list>
