@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity
             database.createDataBase();
             database.openDatabase();
         } catch (Exception e) {
-
+            Log.e("Exception", e.toString());
         }
         ConstantData.CheckNetwork(MainActivity.this);
 
@@ -263,6 +263,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -705,31 +706,32 @@ public class MainActivity extends AppCompatActivity
             }
         }).start();
     }
-    private void blink1() {
-        final Handler handler = new Handler();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                int timeToBlink = 1000;    //in milissegunds
-                try {
-                    Thread.sleep(timeToBlink);
-                } catch (Exception e) {
-                }
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
 
-                        if (txt_today_deal.getVisibility() == View.VISIBLE) {
-                            txt_today_deal.setVisibility(View.INVISIBLE);
-                        } else {
-                            txt_today_deal.setVisibility(View.VISIBLE);
-                        }
-                        blink1();
-                    }
-                });
-            }
-        }).start();
-    }
+    //    private void blink1() {
+//        final Handler handler = new Handler();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                int timeToBlink = 1000;    //in milissegunds
+//                try {
+//                    Thread.sleep(timeToBlink);
+//                } catch (Exception e) {
+//                }
+//                handler.post(new Runnable() {
+//                    @Override
+//                    public void run() {
+//
+//                        if (txt_today_deal.getVisibility() == View.VISIBLE) {
+//                            txt_today_deal.setVisibility(View.INVISIBLE);
+//                        } else {
+//                            txt_today_deal.setVisibility(View.VISIBLE);
+//                        }
+//                        blink1();
+//                    }
+//                });
+//            }
+//        }).start();
+//    }
     private void Fragment_call() {
 
         FragmentManager fm = getSupportFragmentManager();
