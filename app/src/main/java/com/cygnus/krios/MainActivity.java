@@ -127,11 +127,11 @@ public class MainActivity extends AppCompatActivity
         ConstantData.CheckNetwork(MainActivity.this);
 
         All_Menu_list = database.Get_InsertProduct_categories();
-        try {
-//            new Get_ToDay_Deals().execute("");
-        } catch (Exception e) {
-            ConstantData.DisplayAlert("Connection Error !!", "Please check your network and Try Again !!", MainActivity.this);
-        }
+//        try {
+////            new Get_ToDay_Deals().execute("");
+//        } catch (Exception e) {
+//            ConstantData.DisplayAlert("Connection Error !!", "Please check your network and Try Again !!", MainActivity.this);
+//        }
 
         if (All_Menu_list.size() == 0) {
             try {
